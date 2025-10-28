@@ -1,5 +1,4 @@
-l<!DOCTYPE html>
-<html lang="en">
+ lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -199,54 +198,4 @@ l<!DOCTYPE html>
 
   <main>
     <form id="loginForm">
-      <label for="username">Username:</label>
-      <input type="text" id="username" required>
-
-      <label for="password">Password:</label>
-      <input type="password" id="password" required>
-
-      <button type="submit">Login</button>
-    </form>
-
-    <p id="message"></p>
-  </main>
-
-  <script>
-    const form = document.getElementById('loginForm');
-    const message = document.getElementById('message');
-
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-
-      const username = document.getElementById('username').value;
-      const password = document.getElementById('password').value;
-
-      // Demo login credentials
-      const validUser = "admin";
-      const validPass = "12345";
-
-      if (username === validUser && password === validPass) {
-        message.textContent = "✅ Login successful! Redirecting...";
-        message.style.color = "green";
-        setTimeout(() => {
-          window.location.href = "index.html";
-        }, 1000);
-      } else {
-        message.textContent = "❌ Invalid username or password.";
-        message.style.color = "red";
-      }
-    });
-  </script>
-</body>
-</html>
-
-    searchInput.addEventListener('keyup', function() {
-      const term = this.value.toLowerCase();
-      products.forEach(product => {
-        const text = product.textContent.toLowerCase();
-        product.style.display = text.includes(term) ? 'block' : 'none';
-      });
-    });
-  </script>
-</body>
-</html>
+      <label
